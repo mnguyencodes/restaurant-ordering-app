@@ -1,3 +1,74 @@
 body {
+    font-family: "Smythe", sans-serif;
+    font-weight: 400;
+    width: 600px;
+    color: #ffffff;
     margin: 0;
+    background: white;
 } 
+
+/* Typography */
+
+h1 {
+    font-size: 39px;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/* Header */
+
+header {
+    width: 600px;
+    height: 167px;
+    background-image: url(/images/jimmy_diner_header.png);
+    margin-bottom: 67px;
+}
+
+header h1 {
+    padding-top: 46px;
+    padding-left: 46px;
+    margin-bottom: 19px;
+    line-height: 24px;
+}
+
+header h2 {
+    padding-left: 46px;
+}
+
+/* Main */
+
+.container {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 508px;
+    height: 140px;
+    border: 5px solid tomato; /* Used for testing layout*/
+    margin: 46px auto;
+}
+
+.add-btn {
+    margin-left: auto;
+    font-family: "Inter", sans-serif;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 200;
+    border: none;
+}
+
+/* Utility */
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}

@@ -2,6 +2,7 @@ const menuArray = [
     {
         name: "Pizza",
         ingredients: ["pepperoni", "mushrom", "mozarella"],
+        location: "/images/pizza.png",
         id: 0,
         price: 14,
         emoji: "🍕"
@@ -9,6 +10,7 @@ const menuArray = [
     {
         name: "Hamburger",
         ingredients: ["beef", "cheese", "lettuce"],
+        location: "/images/hamburger.png",
         price: 12,
         emoji: "🍔",
         id: 1
@@ -16,8 +18,11 @@ const menuArray = [
         {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
+        location: "/images/beer.png",
         price: 12,
         emoji: "🍺",
         id: 2
     }
 ]
+
+export default menuArray
