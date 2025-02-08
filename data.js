@@ -1,7 +1,7 @@
 const menuArray = [
     {
         name: "Pizza",
-        ingredients: ["pepperoni", "mushrom", "mozarella"],
+        ingredients: ["pepperoni", "mushroom", "mozzarella"],
         location: "/images/pizza.png",
         id: 0,
         price: 14,

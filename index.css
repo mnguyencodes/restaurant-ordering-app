@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Smythe", sans-serif;
     font-weight: 400;
@@ -19,12 +25,15 @@ h2 {
     font-size: 22px;
 }
 
+
+
 /* Header */
 
 header {
     width: 600px;
     height: 167px;
     background-image: url(/images/jimmy_diner_header.png);
+    background-size: cover;
     margin-bottom: 67px;
 }
 
@@ -42,25 +51,59 @@ header h2 {
 /* Main */
 
 .container {
-    color: black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    color: black;
     width: 508px;
     height: 140px;
-    border: 5px solid tomato; /* Used for testing layout*/
+    /* border: 1px solid tomato; /* Used for testing layout */
     margin: 46px auto;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.container img,
+.add-btn,
+.item-ingredients {
+    margin-top: 5px;
+}
+
+.item {
+    padding-left: 31px;
+}
+
+.item h2 {
+    font-size: 28px;
+}
+
+.item-ingredients {
+    margin-top: 5px;
+    color: #8B8B8B;
+}
+
+.item-amt {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
 }
 
 .add-btn {
+    font-size: 16px;
+    font-weight: 200;
+    background: white;
     margin-left: auto;
-    font-family: "Inter", sans-serif;
     width: 50px;
     height: 50px;
+    border: 2px solid #DEDEDE;
     border-radius: 50%;
-    font-size: 32px;
-    font-weight: 200;
-    border: none;
+}
+
+.add-btn:hover,
+.add-btn:active {
+    background: #DEDEDE;
 }
 
 /* Utility */
