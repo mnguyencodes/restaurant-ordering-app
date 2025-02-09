@@ -5,10 +5,11 @@
 }
 
 body {
+    height: 1161px;
     font-family: "Smythe", sans-serif;
     font-weight: 400;
     width: 600px;
-    color: #ffffff;
+    color: black;
     margin: 0;
     background: white;
 } 
@@ -25,11 +26,51 @@ h2 {
     font-size: 22px;
 }
 
+.subheading {
+    font-size: 28px;
+    color: black;
+}
 
+.order-item-remove {
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    color: #BBBBBB;
+}
+
+/* Input */ 
+
+/* Input - Buttons */
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.add-btn {
+    font-size: 16px;
+    font-weight: 200;
+    background: white;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #DEDEDE;
+    border-radius: 50%;
+}
+
+.btn-big {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    background: #16DB99;
+    width: 100%;
+    color: white;
+    padding: 22px 0;
+    border-radius: 4px;
+}
 
 /* Header */
 
 header {
+    color: #ffffff;
     width: 600px;
     height: 167px;
     background-image: url(/images/jimmy_diner_header.png);
@@ -50,7 +91,7 @@ header h2 {
 
 /* Main */
 
-.container {
+.container-menu {
     display: flex;
     align-items: start;
     color: black;
@@ -61,21 +102,17 @@ header h2 {
     border-bottom: 1px solid #D2D2D2;
 }
 
-.container img,
+.container-menu img,
 .add-btn,
-.item-ingredients {
+.menu-item-ingredients {
     margin-top: 5px;
 }
 
-.item {
+.menu-item {
     padding-left: 31px;
 }
 
-.item h2 {
-    font-size: 28px;
-}
-
-.item-ingredients {
+.menu-item-ingredients {
     margin-top: 5px;
     color: #8B8B8B;
 }
@@ -85,25 +122,69 @@ header h2 {
     margin-top: 8px;
 }
 
-.btn {
-    border: none;
-    cursor: pointer;
-}
-
-.add-btn {
-    font-size: 16px;
-    font-weight: 200;
-    background: white;
-    margin-left: auto;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #DEDEDE;
-    border-radius: 50%;
-}
-
 .add-btn:hover,
 .add-btn:active {
     background: #DEDEDE;
+}
+
+/* Order */
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 6px 0;
+}
+
+.container-order {
+    width: 508px;
+    height: 319px;
+    /* border: 2px solid tomato; */
+    margin: 0 auto;
+}
+
+.order-title {
+    text-align: center;
+    margin-bottom: 30px;
+    /* border-bottom: 2px solid black; */
+}
+
+.order-item-details {
+    align-items: center;
+    gap: 10px;
+}
+
+.order-item-remove {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.order-item-amt {
+    margin-left: auto;
+}
+
+.total-price {
+    border-top: 2px solid black;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.total-price li {
+    margin-top: 10px;
+}
+
+/* Modifier */
+
+.btn-complete-order {
+    margin-top: 53px;
+}
+
+/* Modal */
+
+.btn-pay {
+    font-size: 20px;
 }
 
 /* Utility */
