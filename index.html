@@ -25,24 +25,26 @@
             <section id="menu">
                 <!-- Rendered via JS -->
             </section>
-            <section id="order">
-                <div class="container-order">
-                    <h2 class="order-title mt0 subheading">Your order</h2>
-                    <ul class="ul-menu order-item-details">
-                        <li class="subheading">Pizza</li>
-                        <li class="order-item-remove">remove</li>
-                        <li class="order-item-amt item-amt">$14</li>
-                    </ul>        
-                    <ul class="ul-menu order-item-details">
-                        <li class="subheading">Pizza</li>
-                        <li class="order-item-remove">remove</li>
-                        <li class="order-item-amt item-amt">$14</li>
-                    </ul>                             
-                    <ul class="ul-menu total-price">
-                        <li class="subheading">Total price:</li>
-                        <li class="item-amt">$14</li>
-                    </ul>
-                    <button class="btn btn-big btn-complete-order">Complete Order</button>
+            <section>
+                <div id="container-order" class="container-order">
+                    <!-- Rendered via JS -->
+                </div>
+                <div id="total-price">
+                    <!-- Rendered via JS -->
+                </div>
+                <div id="complete-order">
+                    <!-- Rendered via JS -->
+                </div>
+            </section>
+            <section class="modal">
+                <div class="modal-inner">
+                    <h2>Enter card details</h2>
+                    <form>
+                        <input name="name" type="text" placeholder="Enter your name" required>
+                        <input name="card" type="text" placeholder="Enter card number" required>
+                        <input name="cvv" type="text" placeholder="Enter CVV" required>
+                        <button class="btn btn-big" type="submit">Pay</button>
+                    </form>
                 </div>
             </section>
         </main>

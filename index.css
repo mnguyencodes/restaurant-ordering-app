@@ -5,12 +5,12 @@
 }
 
 body {
-    height: 1161px;
+    padding-bottom: 50px;
     font-family: "Smythe", sans-serif;
     font-weight: 400;
     width: 600px;
     color: black;
-    margin: 0;
+    margin: 0 auto;
     background: white;
 } 
 
@@ -24,6 +24,12 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 22px;
+}
+
+input,
+button,
+.modal {
+    font-family: Verdana, sans-serif;
 }
 
 .subheading {
@@ -59,12 +65,12 @@ h2 {
 
 .btn-big {
     font-weight: bold;
-    font-family: Verdana, sans-serif;
     background: #16DB99;
     width: 100%;
     color: white;
     padding: 22px 0;
     border-radius: 4px;
+    border: none;
 }
 
 /* Header */
@@ -139,7 +145,7 @@ header h2 {
 
 .container-order {
     width: 508px;
-    height: 319px;
+    /* height: 319px; */
     /* border: 2px solid tomato; */
     margin: 0 auto;
 }
@@ -153,6 +159,10 @@ header h2 {
 .order-item-details {
     align-items: center;
     gap: 10px;
+}
+
+.item-qty {
+    letter-spacing: 2px;
 }
 
 .order-item-remove {
@@ -182,9 +192,60 @@ header h2 {
 }
 
 /* Modal */
+.modal h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
 
-.btn-pay {
+.modal,
+.modal-inner {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.modal {
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 524px;
+    height: 542px;
+    box-shadow: 0 0 200px 25px #666;
+    background: white;
+    border-radius: 5px;
+}
+
+.modal-inner {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+}
+
+.modal input[type="text"] {
+    width: 100%;
+    border-radius: 4px;
+    border-color: #757575;
+    padding: 20px 0;
+}
+
+.modal input::placeholder {
+    padding-left: 25px;
+}
+
+.modal .btn-big {
+    margin-top: 25px;
+}
+
+.btn-pay,
+.modal input[type="text"] {
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
 /* Utility */
@@ -195,4 +256,8 @@ header h2 {
 
 .mb0 {
     margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
 }
