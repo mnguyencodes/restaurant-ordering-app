@@ -3,10 +3,12 @@ import menuArray from "/data.js"
 const yourOrder = []
 
 document.addEventListener("click", (e) => {
-    if (e.target.dataset.add){
+    if (e.target.dataset.add) {
         handleAddBtn(Number(e.target.dataset.add))
     } else if (e.target.dataset.remove) {
         handleRemoveBtn(Number(e.target.dataset.remove))
+    } else if (e.target.id === "complete-order-btn") {
+        handleCompleteOrderBtn()
     }
 })
 
@@ -32,6 +34,10 @@ function handleRemoveBtn(menuItemId) {
         }
     }
     render()
+}
+
+function handleCompleteOrderBtn() {
+    document.getElementById("modal").style.display = "block"
 }
 
 function getMenuHtmlString() {
@@ -94,7 +100,7 @@ function getBtnHtmlString() {
     if (yourOrder.length === 0) {
         return ""
     }
-    return `<button class="btn btn-big btn-complete-order">Complete Order</button>`
+    return `<button id="complete-order-btn" class="btn btn-big btn-complete-order">Complete Order</button>`
 }
 
 function render() {
