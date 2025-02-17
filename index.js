@@ -19,6 +19,10 @@ paymentFormEl.addEventListener("submit", e=>{
     e.preventDefault()
     yourOrder = []
     document.getElementById("modal").style.display = "none"
+
+    const conf = document.getElementById("order-confirmation-message")
+    conf.style.display = "block"
+    conf.textContent = `Thanks, ${document.getElementById("name").value}! Your order is on its way!`
     render()
 })
 
