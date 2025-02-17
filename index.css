@@ -216,6 +216,17 @@ header h2 {
     border-radius: 5px;
 }
 
+button#close-modal-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 100%;
+    background-color: inherit;
+}
+
 .modal-inner {
     display: flex;
     flex-direction: column;
@@ -223,21 +234,6 @@ header h2 {
     text-align: center;
     width: 90%;
     height: 90%;
-    border: 2px solid black;
-}
-
-.modal-inner > h2 {
-    margin-top: 0;
-}
-
-button#close-modal-button {
-    align-self: flex-end;
-    font-weight: bold;
-    padding: 10px;
-    margin: 5px 5px 0 0;
-    border-radius: 50%;
-    line-height: 100%;
-    background-color: inherit;
 }
 
 .modal input[type="text"] {
