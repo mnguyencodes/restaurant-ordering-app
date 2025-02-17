@@ -9,6 +9,8 @@ document.addEventListener("click", (e) => {
         handleRemoveBtn(Number(e.target.dataset.remove))
     } else if (e.target.id === "complete-order-btn") {
         handleCompleteOrderBtn()
+    } else if (e.target.id === "close-modal-button") {
+        handleCloseModalBtn()
     }
 })
 
@@ -38,6 +40,10 @@ function handleRemoveBtn(menuItemId) {
 
 function handleCompleteOrderBtn() {
     document.getElementById("modal").style.display = "block"
+}
+
+function handleCloseModalBtn() {
+    document.getElementById("modal").style.display = "none"
 }
 
 function getMenuHtmlString() {
