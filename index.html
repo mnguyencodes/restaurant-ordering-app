@@ -35,13 +35,15 @@
                 <div id="complete-order">
                     <!-- Rendered via JS -->
                 </div>
+                <p id="order-confirmation-message"></p>
             </section>
             <section id="modal" class="modal">
                 <button class="btn" id="close-modal-button">X</button>
                 <div class="modal-inner">
                     <h2>Enter card details</h2>
-                    <form>
+                    <form id="payment-form">
                         <input 
+                            id="name"
                             name="name" 
                             type="text" 
                             placeholder="Enter your name" 

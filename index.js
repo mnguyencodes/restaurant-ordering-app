@@ -1,6 +1,7 @@
 import menuArray from "/data.js"
+const paymentFormEl = document.getElementById("payment-form")
 
-const yourOrder = []
+let yourOrder = []
 
 document.addEventListener("click", (e) => {
     if (e.target.dataset.add) {
@@ -11,7 +12,18 @@ document.addEventListener("click", (e) => {
         handleCompleteOrderBtn()
     } else if (e.target.id === "close-modal-button") {
         handleCloseModalBtn()
-    }
+    } 
+})
+
+paymentFormEl.addEventListener("submit", e=>{
+    e.preventDefault()
+    yourOrder = []
+    document.getElementById("modal").style.display = "none"
+
+    const conf = document.getElementById("order-confirmation-message")
+    conf.style.display = "block"
+    conf.textContent = `Thanks, ${document.getElementById("name").value}! Your order is on its way!`
+    render()
 })
 
 function handleAddBtn(menuItemId) {
