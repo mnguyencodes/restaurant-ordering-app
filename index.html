@@ -41,9 +41,26 @@
                 <div class="modal-inner">
                     <h2>Enter card details</h2>
                     <form>
-                        <input name="name" type="text" placeholder="Enter your name" required>
-                        <input name="card" type="text" placeholder="Enter card number" required>
-                        <input name="cvv" type="text" placeholder="Enter CVV" required>
+                        <input 
+                            name="name" 
+                            type="text" 
+                            placeholder="Enter your name" 
+                            required
+                        >
+                        <input 
+                            name="card" 
+                            type="text" 
+                            placeholder="Enter card number" 
+                            pattern=[0-9]{16}
+                            required
+                        >
+                        <input 
+                            name="cvv" 
+                            type="text" 
+                            placeholder="Enter CVV" 
+                            pattern=[0-9]{3}
+                            required
+                        >
                         <button class="btn btn-big" type="submit">Pay</button>
                     </form>
                 </div>
