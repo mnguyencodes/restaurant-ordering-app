@@ -1,14 +1,11 @@
 # Restaurant Order App
 Working through Scrimba's Frontend Developer Career Path and applying what I learnt with each project.
 
-# Project Goals
-
-The goals of this project are as follows:
-
-- Follow the design spec on Figma to ensure accurate and consistent design.
-- Render menu options dynamically using JavaScript.
-- Implement functionality to add and remove items from the menu.
-- Create a payment modal with compulsory form inputs to ensure necessary information is collected.
+# Project Goals (DONE)
+- ~~Follow the design spec on Figma to ensure accurate and consistent design.~~
+- ~~Render menu options dynamically using JavaScript.~~
+- ~~Implement functionality to add and remove items from the menu.~~
+- ~~Create a payment modal with compulsory form inputs to ensure necessary information is collected.~~
 
 ## Installation
 To run this project locally:
