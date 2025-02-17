@@ -103,7 +103,6 @@ header h2 {
     color: black;
     width: 508px;
     height: 140px;
-    /* border: 1px solid tomato; /* Used for testing layout */
     margin: 46px auto;
     border-bottom: 1px solid #D2D2D2;
 }
@@ -145,15 +144,12 @@ header h2 {
 
 .container-order {
     width: 508px;
-    /* height: 319px; */
-    /* border: 2px solid tomato; */
     margin: 0 auto;
 }
 
 .order-title {
     text-align: center;
     margin-bottom: 30px;
-    /* border-bottom: 2px solid black; */
 }
 
 .order-item-details {
